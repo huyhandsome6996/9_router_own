@@ -1,8 +1,8 @@
 export default function manifest() {
   return {
-    name: '9Router - AI Infrastructure Management',
+    name: '9Router - Quản lý Hạ tầng AI',
     short_name: '9Router',
-    description: 'One endpoint for all your AI providers. Manage keys, monitor usage, and scale effortlessly.',
+    description: 'Một endpoint cho tất cả nhà cung cấp AI. Quản lý khóa, theo dõi sử dụng và mở rộng dễ dàng.',
     start_url: '/',
     display: 'standalone',
     background_color: '#0a0a0a',

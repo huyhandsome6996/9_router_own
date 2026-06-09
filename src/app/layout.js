@@ -16,8 +16,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "9Router - AI Infrastructure Management",
-  description: "One endpoint for all your AI providers. Manage keys, monitor usage, and scale effortlessly.",
+  title: "9Router - Quản lý Hạ tầng AI",
+  description: "Một endpoint cho tất cả nhà cung cấp AI. Quản lý khóa, theo dõi sử dụng và mở rộng dễ dàng.",
   icons: {
     icon: "/favicon.svg",
   },
@@ -29,7 +29,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="vi" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{

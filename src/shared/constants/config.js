@@ -3,7 +3,7 @@ import pkg from "../../../package.json" with { type: "json" };
 // App configuration
 export const APP_CONFIG = {
   name: "9Router Proxy",
-  description: "AI Infrastructure Management",
+  description: "Quản lý Hạ tầng AI",
   version: pkg.version,
 };
 
@@ -43,7 +43,7 @@ export const SUBSCRIPTION_CONFIG = {
   price: 1.0,
   currency: "USD",
   interval: "month",
-  planName: "Pro Plan",
+  planName: "Gói Pro",
 };
 
 // API endpoints
