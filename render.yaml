@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: 9router
+    runtime: docker
+    plan: starter+                    # Cần ít nhất 2GB RAM, khuyến nghị 4GB
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 20128
+      - key: JWT_SECRET
+        generateValue: true           # Tự sinh secret ngẫu nhiên
+      - key: INITIAL_PASSWORD
+        sync: false                   # Bạn tự đặt mật khẩu đăng nhập
+      - key: DATA_DIR
+        value: /app/data
+      - key: REQUIRE_API_KEY
+        value: "true"                 # Bảo mật: yêu cầu API key khi truy cập endpoint
+      - key: ENABLE_REQUEST_LOGS
+        value: "true"
+      - key: OBSERVABILITY_ENABLED
+        value: "true"
+      - key: AUTH_COOKIE_SECURE
+        value: "true"
+      # OAuth Google (điền giá trị trong Render Dashboard → Environment)
+      - key: GEMINI_CLIENT_ID
+        sync: false
+      - key: GEMINI_CLIENT_SECRET
+        sync: false
+      - key: ANTIGRAVITY_CLIENT_ID
+        sync: false
+      - key: ANTIGRAVITY_CLIENT_SECRET
+        sync: false
